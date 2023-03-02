@@ -5,8 +5,8 @@
 	import { Router } from "svelte-routing";
 
 	const URL = {
-		articulos: "https://tiendabackend.fly.dev/api/articulos/",
-		clientes: "https://tiendabackend.fly.dev/api/clientes/"
+		juegos: "https://tiendajuegos.herokuapp.com/api/juegos/",
+		clientes: "https://tiendajuegos.herokuapp.com/api/clientes/"
 	};
 
 	setContext("URL", URL);
