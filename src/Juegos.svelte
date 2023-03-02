@@ -19,15 +19,17 @@
         RegExp(busqueda, "i").test(item.nombre)
     );
 </script>
-
+<div class="text-center">
 <h1>Juegos</h1>
 <Buscar bind:busqueda />
+</div>
 
 <hr />
-
+<div class="text-center">
 <Juego bind:juego>
     <Boton documento={juego} tipo="insertar" coleccion="juegos">Insertar</Boton>
 </Juego>
+</div>
 <br />
 <br />
 
