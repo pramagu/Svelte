@@ -31,7 +31,7 @@
 <br />
 <br />
 
-<div class="row-cols-3">
+<div class="row">
     {#each datos as juego}
         <div class="col-md-4 mx-2">
             <Juego bind:juego>
