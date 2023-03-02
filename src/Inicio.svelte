@@ -8,24 +8,24 @@
     <h1 class="text-center">Bienvenido a Tienda Juegos</h1>
 </div>
 <div class="row mt-3">
-  <div class="col-md-4 text-decoration-none">
+  <div class="col-md-4 text-center">
     <Link to="/">
       
-        <span class="ps-3"> Inicio</span>
+        <span class="ps-3">Página de Inicio</span>
     
     </Link>
   </div>
-  <div class="col-md-4 text-decoration-none">
+  <div class="col-md-4 text-center">
     <Link to="/juegos">
 
-        <span class="ps-3">Juegos</span>
+        <span class="ps-3">Crud de Juegos</span>
 
     </Link>
   </div>
-  <div class="col-md-4 text-decoration-none">
+  <div class="col-md-4 text-center">
     <Link to="/clientes">
 
-        <span class="ps-3">Clientes</span>
+        <span class="ps-3">Crud de Clientes</span>
 
     </Link>
   </div>
@@ -49,5 +49,9 @@
 <style>
     #bloqueinicio{
         background-color: wheat;
+    }
+    
+    a{
+        text-decoration: none;
     }
 </style>
