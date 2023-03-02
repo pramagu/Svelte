@@ -30,9 +30,9 @@
 </Cliente>
 <br />
 
-<div class="row-cols-3">
+<div class="row">
     {#each datos as cliente}
-        <div class="col-md-3 mt-4">
+        <div id="clientebox" class="col-md-3 mt-4">
             <Cliente {cliente}>
                 <Boton tipo="modificar" documento={cliente} coleccion="clientes" > Modificar </Boton>
                 <Boton tipo="eliminar" documento={cliente} coleccion="clientes" > Eliminar </Boton>
@@ -40,4 +40,12 @@
         </div>
     {/each}
 </div>
+
+<style>
+    #clientebox{
+        
+    background-color: aquamarine
+        
+    }
+</style>
 
