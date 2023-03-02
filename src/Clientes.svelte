@@ -26,16 +26,16 @@
 <hr />
 
 <Cliente bind:cliente>
-    <Boton documento={cliente} tipo="insertar" coleccion="clientes" />
+    <Boton documento={cliente} tipo="insertar" coleccion="clientes" >Insertar</Boton>
 </Cliente>
 <br />
 
 <div class="row-cols-3">
     {#each datos as cliente}
-        <div class="col">
+        <div class="col-md-4 mx-2">
             <Cliente {cliente}>
-                <Boton tipo="modificar" documento={cliente} coleccion="clientes" />
-                <Boton tipo="eliminar" documento={cliente} coleccion="clientes" />
+                <Boton tipo="modificar" documento={cliente} coleccion="clientes" > Modificar </Boton>
+                <Boton tipo="eliminar" documento={cliente} coleccion="clientes" > Eliminar </Boton>
             </Cliente>
         </div>
     {/each}

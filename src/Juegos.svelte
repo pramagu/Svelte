@@ -11,12 +11,13 @@
     const URL = getContext("URL");
 
     onMount(async () => {
-    const response = await fetch(URL.juegos);
-    const data = await response.json();
-    $jsonData = data;
-  });
-  $: datos = $jsonData.filter ( item => RegExp(busqueda, "i").test(item.nombre)) 
-
+        const response = await fetch(URL.juegos);
+        const data = await response.json();
+        $jsonData = data;
+    });
+    $: datos = $jsonData.filter((item) =>
+        RegExp(busqueda, "i").test(item.nombre)
+    );
 </script>
 
 <h1>Juegos</h1>
@@ -25,16 +26,20 @@
 <hr />
 
 <Juego bind:juego>
-    <Boton documento={juego} tipo="insertar" coleccion="juegos" >Insertar</Boton>
+    <Boton documento={juego} tipo="insertar" coleccion="juegos">Insertar</Boton>
 </Juego>
 <br />
+<br />
 
-{#each datos as juego}
-    <br />
-    <Juego bind:juego={juego}>
-        <Boton tipo="modificar" documento={juego} coleccion="juegos" >Modificar</Boton>
-        <Boton tipo="eliminar" documento={juego} coleccion="juegos" >Eliminar</Boton>
-    </Juego>
-    <br />
-    <br />
-{/each}
+<div class="row-cols-3">
+    {#each datos as juego}
+        <div class="col-md-4 mx-2">
+            <Juego bind:juego>
+                <Boton tipo="modificar" documento={juego} coleccion="juegos"
+                    >Modificar</Boton>
+                <Boton tipo="eliminar" documento={juego} coleccion="juegos"
+                    >Eliminar</Boton>
+            </Juego>
+        </div>
+    {/each}
+</div>
