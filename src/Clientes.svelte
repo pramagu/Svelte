@@ -20,14 +20,17 @@
         : $jsonData;
 </script>
 
+<div class="text-center">
 <h1>Clientes</h1>
 <Buscar bind:busqueda />
+</div>
 
 <hr />
-
+<div class="text-center">
 <Cliente bind:cliente>
     <Boton documento={cliente} tipo="insertar" coleccion="clientes">Insertar</Boton>
 </Cliente>
+</div>
 <br />
 
 <div class="row">
