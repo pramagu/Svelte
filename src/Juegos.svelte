@@ -33,7 +33,7 @@
 
 <div class="row">
     {#each datos as juego}
-        <div class="col-md-3 mt-4">
+        <div id="juegobox" class="col-md-3 mt-4">
             <Juego bind:juego>
                 <Boton tipo="modificar" documento={juego} coleccion="juegos"
                     >Modificar</Boton>
@@ -43,3 +43,11 @@
         </div>
     {/each}
 </div>
+
+<style>
+    #juegobox{
+        
+    background-color: "lightgreen"
+        
+    }
+</style>
