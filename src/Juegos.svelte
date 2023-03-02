@@ -33,7 +33,7 @@
 
 <div class="row">
     {#each datos as juego}
-        <div id="juegobox" class="col-md-3 mt-4 ms-2">
+        <div id="juegobox" class="col-md-3 mt-4 ms-2 pt-2 pb-2">
             <Juego bind:juego>
                 <Boton tipo="modificar" documento={juego} coleccion="juegos">Modificar</Boton>
                 <Boton tipo="eliminar" documento={juego} coleccion="juegos">Eliminar</Boton>
