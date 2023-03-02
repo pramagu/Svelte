@@ -32,7 +32,7 @@
 
 <div class="row-cols-3">
     {#each datos as cliente}
-        <div class="col-md-4 mx-2">
+        <div class="col-md-3 mt-4">
             <Cliente {cliente}>
                 <Boton tipo="modificar" documento={cliente} coleccion="clientes" > Modificar </Boton>
                 <Boton tipo="eliminar" documento={cliente} coleccion="clientes" > Eliminar </Boton>
