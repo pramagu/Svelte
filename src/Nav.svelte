@@ -14,7 +14,7 @@
 
 <style>
     nav {
-        background-color: antiquewhite;
+        background-color: brown;
         padding: 10px;
     }
 
