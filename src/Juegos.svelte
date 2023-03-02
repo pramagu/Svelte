@@ -47,7 +47,7 @@
 <style>
     #juegobox{
         
-    background-color: "lightgreen"
+    background-color: lightgreen
         
     }
 </style>
