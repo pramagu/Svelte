@@ -25,15 +25,15 @@
 <hr />
 
 <Juego bind:juego>
-    <Boton documento={juego} tipo="insertar" coleccion="juegos" />
+    <Boton documento={juego} tipo="insertar" coleccion="juegos" >Insertar</Boton>
 </Juego>
 <br />
 
 {#each datos as juego}
     <br />
     <Juego bind:juego={juego}>
-        <Boton tipo="modificar" documento={juego} coleccion="juegos" />
-        <Boton tipo="eliminar" documento={juego} coleccion="juegos" />
+        <Boton tipo="modificar" documento={juego} coleccion="juegos" >Modificar</Boton>
+        <Boton tipo="eliminar" documento={juego} coleccion="juegos" >Eliminar</Boton>
     </Juego>
     <br />
     <br />

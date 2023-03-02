@@ -44,7 +44,7 @@
         ) {
             let opciones = {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin" : "*" },
                 body: JSON.stringify(documento),
             };
             fetch(url, opciones)
@@ -59,7 +59,7 @@
     function modificar() {
         let opciones = {
             method: "PUT",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin" : "*"  },
             body: JSON.stringify(documento),
         };
         fetch(url + documento._id, opciones)
@@ -79,4 +79,4 @@
     }
 </script>
 
-<button class="{clases}" on:click={handler} value="{tipo}" />
+<button class="{clases}" on:click={handler}>{tipo}</button>
