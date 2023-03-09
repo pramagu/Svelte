@@ -95,8 +95,6 @@ El archivo `public/index.html` tiene enlaces a los anteriores. Su código es:
 
 Primero, vamos a enseñar los archivos `package.json` y `package-lock.json` para que se puedan observar las dependencias que usamos en nuestro proyecto, estas dependencias las mantengo actualizadas por medio de **Dependabot** en Github el cual puedes poner en tu propio repositorio por medio de `Settings ` y en la pestaña de Seguridad. El bot te hará pull requests con la actualización de las dependencias donde se te especificará si dicha actualización de dependencias puede romper o no la aplicación. 
 
-El contenido de los archivos `src/main.js` y `src/App.svelte` es el que se muestra a continuación:
-
 **`package.json`**
 
 ```json
