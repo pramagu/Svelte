@@ -3,7 +3,7 @@
 
 
 // Nombre de la caché
-const CACHE_NAME = 'tiendapwa-v1';
+const CACHE_NAME = 'tiendajuegos';
 
 // Archivos necesarios para el funcionamiento offline
 const CACHE_ASSETS = [
